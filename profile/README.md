@@ -6,6 +6,7 @@
   [![Status](https://img.shields.io/badge/Status-Operational-success?style=for-the-badge)](https://appgear.io)
   [![Phase 1](https://img.shields.io/badge/Phase_1-Completed-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
   [![Phase 2](https://img.shields.io/badge/Phase_2-Completed-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+  [![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-green?style=for-the-badge&logo=brazil)](https://github.com/AppGearIO)
 </div>
 
 ---
@@ -44,5 +45,5 @@ AppGear is a comprehensive platform designed to streamline development workflows
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by the AppGear Team</sub>
+  <sub>Built with ❤️ and 🇧🇷 by the AppGear Team</sub>
 </div>
