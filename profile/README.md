@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="profile/assets/AppGear.png" alt="AppGear Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/AppGearIO/.github/main/profile/assets/AppGear.png" alt="AppGear Logo" width="200"/>
   <h1>AppGear.io</h1>
   <p><strong>Plataforma Kubernetes Production-Ready para Desenvolvimento Avançado</strong></p>
 
