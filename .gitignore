@@ -1,0 +1,6 @@
+# Pasta temporária para arquivos de status
+status-data/
+
+# Arquivos temporários
+*.tmp
+*.log

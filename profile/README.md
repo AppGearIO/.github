@@ -1,49 +1,100 @@
 <div align="center">
-  <img src="assets/AppGear.png" alt="AppGear Logo" width="200"/>
+  <img src="profile/assets/AppGear.png" alt="AppGear Logo" width="200"/>
   <h1>AppGear.io</h1>
-  <p><strong>Empowering Developers with Advanced Tooling</strong></p>
+  <p><strong>Plataforma Kubernetes Production-Ready para Desenvolvimento Avançado</strong></p>
 
-  [![Status](https://img.shields.io/badge/Status-Operational-success?style=for-the-badge)](https://appgear.io)
-  [![Phase 1](https://img.shields.io/badge/Phase_1-Completed-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
-  [![Phase 2](https://img.shields.io/badge/Phase_2-Completed-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+  [![Status](https://img.shields.io/badge/Status-Production--Ready-success?style=for-the-badge)](https://appgear.io)
+  [![Fase 1](https://img.shields.io/badge/Fase_1-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+  [![Fase 2](https://img.shields.io/badge/Fase_2-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+  [![Kubernetes](https://img.shields.io/badge/K8s-v1.33.6-326CE5?style=for-the-badge&logo=kubernetes)](https://kubernetes.io)
   [![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-green?style=for-the-badge&logo=brazil)](https://github.com/AppGearIO)
 </div>
 
 ---
 
-## 🚀 About AppGear
+## 🚀 Sobre o AppGear
 
-AppGear is a comprehensive platform designed to streamline development workflows, offering robust stacks for both minimal and enterprise-grade deployments.
+AppGear é uma plataforma completa de desenvolvimento que oferece infraestrutura robusta com **Kubernetes**, **IA integrada** e **observabilidade completa**. Projetada para acelerar o desenvolvimento de aplicações modernas com as melhores práticas DevOps.
 
-## 📊 Current Status
+## 📊 Status Atual
 
-| Phase | Topology | Status | Focus |
+### Sistema em Produção ✨
+
+| Métrica | Valor | Observação |
+|---------|-------|------------|
+| **Serviços Ativos** | 11 | Core + Infrastructure |
+| **Pods Running** | 13 | Todos healthy ✅ |
+| **Namespaces** | 4 | appgear, observability, ingress-nginx, cert-manager |
+| **Storage** | 45 Gi | Persistente com política Retain |
+| **Uptime** | 46+ horas | Zero restarts |
+| **Alta Disponibilidade** | ✅ Ativo | LiteLLM 2x réplicas |
+
+### Progresso de Fases
+
+| Fase | Topologia | Status | Foco |
 | :--- | :--- | :--- | :--- |
-| **FASE 1** | **Minimal (Docker Compose)** | ✅ **100% Completed** | Dev/PoC, Fast Deployment |
-| **FASE 2** | **Standard (Kubernetes)** | ✅ **100% Completed** | Core, Observability, Scalability |
-| **FASE 3** | **Full (Ingress/WAF)** | 🔮 **Planned** | Security, Business Dashboards |
-| **FASE 4** | **Enterprise** | 🔮 **Planned** | Multi-tenancy, GitOps |
+| **Fase 1** | **Minimal (Docker Compose)** | ✅ **Concluída** | Desenvolvimento rápido, PoC |
+| **Fase 2** | **Standard (Kubernetes)** | ✅ **Concluída - ATIVO** | Core, Observabilidade, Escalabilidade |
+| **Fase 3** | **Full (Service Mesh)** | 📋 **Planejada (Jan/2026)** | Istio, Multi-tenancy, Business Dashboards |
+| **Fase 4** | **Enterprise** | 🔮 **Futura (Q2/2026)** | Multi-cluster, GitOps, Disaster Recovery |
 
-## 🛠️ Technology Stack
+## 🛠️ Stack Tecnológica
 
-### Minimal (Docker Compose)
-- **Services:** Traefik, Kong, PostgreSQL, Redis, LiteLLM, Flowise, n8n
-- **Features:** Automated backups, E2E testing, Groq API integration
+### Core Services (9 serviços)
 
-### Standard (Kubernetes K3s)
-- **Infrastructure:** K3s v1.33.6, Helm
-- **Observability:** Prometheus, Grafana
-- **Reliability:** StatefulSets for data, HA for LiteLLM
-- **Compliance:** Full audit and interoperability reports
+**Aplicações:**
+- 🤖 **LiteLLM** (2x HA) - AI Gateway com suporte multi-provider
+- 🌊 **Flowise** - AI Workflow Builder
+- 🔄 **n8n** - Automação avançada
+- 💻 **Platform** - Admin Panel (Next.js)
+- 🛡️ **Coraza WAF** - Web Application Firewall
 
-## 🔗 Quick Links
+**Dados:**
+- 🐘 **PostgreSQL** - Banco de dados (10Gi PVC)
+- 🔴 **Redis** - Cache e sessões (5Gi PVC)
+
+**Observabilidade:**
+- 📊 **Prometheus** - Coleta de métricas (10Gi PVC)
+- 📈 **Grafana** - Dashboards e visualização (5Gi PVC)
+
+### Infrastructure Services (2 serviços)
+
+- 🌐 **NGINX Ingress Controller** - Roteamento HTTP/HTTPS
+- 🔐 **Cert-Manager** - Gerenciamento automático de certificados SSL/TLS
+
+### Tecnologias Base
+
+- **Orquestração:** Kubernetes (K3s v1.33.6)
+- **Acesso:** Dual-mode (NodePort para dev + Ingress HTTPS para produção)
+- **Monitoramento:** Prometheus + Grafana com baseline de 15min
+- **Segurança:** Coraza WAF, Cert-Manager, TLS automático
+- **Storage:** 45Gi persistente com política Retain (proteção contra deleção)
+
+## 🔌 Modos de Acesso
+
+### 🔧 Desenvolvimento (NodePort)
+Acesso direto via `localhost` - 7 serviços expostos em portas NodePort
+
+### 🚀 Produção (Ingress HTTPS)
+Acesso via domínio com certificados SSL/TLS automáticos (Let's Encrypt)
+- Configurado e pronto para ativação
+- Aguardando apenas configuração DNS
+
+## 🔗 Links Importantes
 
 - [🌐 Website](https://appgear.io)
-- [📂 Main Repository](https://github.com/AppGearIO/AppGear)
-- [📄 Documentation](https://docs.appgear.io)
+- [📂 Repositório Principal](https://github.com/AppGearIO/AppGear)
+- [📄 Documentação](https://docs.appgear.io)
+- [📊 Status Detalhado](https://github.com/AppGearIO/AppGear/blob/main/CURRENT-STATUS.md)
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ and 🇧🇷 by the AppGear Team</sub>
+  
+**AppGear - Production-Ready Kubernetes Platform**
+
+Desenvolvido com ❤️ e 🇧🇷 pela Equipe AppGear
+
+**Versão 2.0** • Última atualização: 05 de dezembro de 2025
+
 </div>
