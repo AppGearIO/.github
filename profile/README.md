@@ -95,6 +95,6 @@ Acesso via domínio com certificados SSL/TLS automáticos (Let's Encrypt)
 
 Desenvolvido com ❤️ e 🇧🇷 pela Equipe AppGear
 
-**Versão 2.0** • Última atualização: 05 de dezembro de 2025
+**Versão 2.0.0** • Última atualização: 09 de dezembro de 2025
 
 </div>
