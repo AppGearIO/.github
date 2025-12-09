@@ -6,6 +6,8 @@
   [![Status](https://img.shields.io/badge/Status-Production--Ready-success?style=for-the-badge)](https://appgear.io)
   [![Fase 1](https://img.shields.io/badge/Fase_1-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
   [![Fase 2](https://img.shields.io/badge/Fase_2-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+  [![Fase 3](https://img.shields.io/badge/Fase_3-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+  [![Fase 4](https://img.shields.io/badge/Fase_4-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
   [![Kubernetes](https://img.shields.io/badge/K8s-v1.33.6-326CE5?style=for-the-badge&logo=kubernetes)](https://kubernetes.io)
   [![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-green?style=for-the-badge&logo=brazil)](https://github.com/AppGearIO)
 </div>
@@ -34,9 +36,9 @@ AppGear é uma plataforma completa de desenvolvimento que oferece infraestrutura
 | Fase | Topologia | Status | Foco |
 | :--- | :--- | :--- | :--- |
 | **Fase 1** | **Minimal (Docker Compose)** | ✅ **Concluída** | Desenvolvimento rápido, PoC |
-| **Fase 2** | **Standard (Kubernetes)** | ✅ **Concluída - ATIVO** | Core, Observabilidade, Escalabilidade |
-| **Fase 3** | **Full (Service Mesh)** | 📋 **Planejada (Jan/2026)** | Istio, Multi-tenancy, Business Dashboards |
-| **Fase 4** | **Enterprise** | 🔮 **Futura (Q2/2026)** | Multi-cluster, GitOps, Disaster Recovery |
+| **Fase 2** | **Standard (Kubernetes)** | ✅ **Concluída** | Core, Observabilidade, Escalabilidade |
+| **Fase 3** | **Full (Service Mesh)** | ✅ **Concluída** | Istio, Multi-tenancy, Business Dashboards |
+| **Fase 4** | **Enterprise** | ✅ **Concluída - ATIVO** | Multi-cluster, GitOps, Disaster Recovery |
 
 ## 🛠️ Stack Tecnológica
 
