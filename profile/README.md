@@ -3,7 +3,7 @@
   <h1>AppGear.io</h1>
   <p><strong>Plataforma Kubernetes Production-Ready para Desenvolvimento Avançado</strong></p>
 
-  [![Status](https://img.shields.io/badge/Status-Production--Ready-success?style=for-the-badge)](https://appgear.io)
+  [![Status](https://img.shields.io/badge/Status-Em%20Implementação--Ready-success?style=for-the-badge)](https://appgear.io)
   [![Fase 1](https://img.shields.io/badge/Fase_1-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
   [![Fase 2](https://img.shields.io/badge/Fase_2-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
   [![Fase 3](https://img.shields.io/badge/Fase_3-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
@@ -97,6 +97,6 @@ Acesso via domínio com certificados SSL/TLS automáticos (Let's Encrypt)
 
 Desenvolvido com ❤️ e 🇧🇷 pela Equipe AppGear
 
-**Versão 2.0.0** • Última atualização: 09 de dezembro de 2025
+**Versão 0.1.0** • Última atualização: 10 de dezembro de 2025
 
 </div>
