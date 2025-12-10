@@ -3,84 +3,65 @@
   <h1>AppGear.io</h1>
   <p><strong>Plataforma Kubernetes Production-Ready para Desenvolvimento Avançado</strong></p>
 
-  [![Status](https://img.shields.io/badge/Status-Em%20Implementação--Ready-success?style=for-the-badge)](https://appgear.io)
-  [![Fase 1](https://img.shields.io/badge/Fase_1-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
-  [![Fase 2](https://img.shields.io/badge/Fase_2-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
-  [![Fase 3](https://img.shields.io/badge/Fase_3-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
-  [![Fase 4](https://img.shields.io/badge/Fase_4-Concluída-blue?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
-  [![Kubernetes](https://img.shields.io/badge/K8s-v1.33.6-326CE5?style=for-the-badge&logo=kubernetes)](https://kubernetes.io)
-  [![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-green?style=for-the-badge&logo=brazil)](https://github.com/AppGearIO)
+[![Status](https://img.shields.io/badge/Status-Aguardando_Instalação-blue?style=for-the-badge)](https://appgear.io)
+[![Onda 0](https://img.shields.io/badge/Onda_0-Pendente-lightgrey?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+[![Ondas 1--12](https://img.shields.io/badge/Ondas_1--12-Pendente-lightgrey?style=for-the-badge)](https://github.com/AppGearIO/AppGear)
+[![Kubernetes](https://img.shields.io/badge/K8s-v1.33.6-326CE5?style=for-the-badge&logo=kubernetes)](https://kubernetes.io)
+[![Made in Brazil](https://img.shields.io/badge/Made%20in-Brazil-green?style=for-the-badge&logo=brazil)](https://github.com/AppGearIO)
+
 </div>
 
 ---
 
 ## 🚀 Sobre o AppGear
 
-AppGear é uma plataforma completa de desenvolvimento que oferece infraestrutura robusta com **Kubernetes**, **IA integrada** e **observabilidade completa**. Projetada para acelerar o desenvolvimento de aplicações modernas com as melhores práticas DevOps.
+AppGear é uma plataforma completa de desenvolvimento que oferece infraestrutura robusta com **Kubernetes**, **IA integrada** e **observabilidade completa**. O projeto está atualmente em fase de reestruturação Enterprise, sendo implementado em **13 Ondas** progressivas.
 
-## 📊 Status Atual
+## 📊 Status Atual: 🌑 Preparaçao (Clean Slate)
 
-### Sistema em Produção ✨
+O projeto está configurado e pronto para início da instalação (Clean Slate). **Nenhuma onda foi instalada ainda.**
 
-| Métrica | Valor | Observação |
-|---------|-------|------------|
-| **Serviços Ativos** | 11 | Core + Infrastructure |
-| **Pods Running** | 13 | Todos healthy ✅ |
-| **Namespaces** | 4 | appgear, observability, ingress-nginx, cert-manager |
-| **Storage** | 45 Gi | Persistente com política Retain |
-| **Uptime** | 46+ horas | Zero restarts |
-| **Alta Disponibilidade** | ✅ Ativo | LiteLLM 2x réplicas |
+### Infraestrutura Base (Pendente)
 
-### Progresso de Fases
+| Componente     | Versão      | Status       | Observação                        |
+| -------------- | ----------- | ------------ | --------------------------------- |
+| **Docker**     | 29.1.2      | ⏳ Pendente  | Runtime de containers             |
+| **Kubernetes** | K3s v1.33.6 | ⏳ Pendente  | Cluster Ochestrator               |
+| **Helm**       | 3.16.3      | ⏳ Pendente  | Package Manager                   |
+| **Estrutura**  | Enterprise  | ✅ Concluída | Layout de diretórios profissional |
 
-| Fase | Topologia | Status | Foco |
-| :--- | :--- | :--- | :--- |
-| **Fase 1** | **Minimal (Docker Compose)** | ✅ **Concluída** | Desenvolvimento rápido, PoC |
-| **Fase 2** | **Standard (Kubernetes)** | ✅ **Concluída** | Core, Observabilidade, Escalabilidade |
-| **Fase 3** | **Full (Service Mesh)** | ✅ **Concluída** | Istio, Multi-tenancy, Business Dashboards |
-| **Fase 4** | **Enterprise** | ✅ **Concluída - ATIVO** | Multi-cluster, GitOps, Disaster Recovery |
+### Progresso Global
 
-## 🛠️ Stack Tecnológica
+**Infraestrutura (Onda 0):** ![0%](https://progress-bar.dev/0)
+**Plataforma Core (Ondas 1-6):** ![0%](https://progress-bar.dev/0)
+**AI & Enterprise (Ondas 7-12):** ![0%](https://progress-bar.dev/0)
 
-### Core Services (9 serviços)
+---
 
-**Aplicações:**
-- 🤖 **LiteLLM** (2x HA) - AI Gateway com suporte multi-provider
-- 🌊 **Flowise** - AI Workflow Builder
-- 🔄 **n8n** - Automação avançada
-- 💻 **Platform** - Admin Panel (Next.js)
-- 🛡️ **Coraza WAF** - Web Application Firewall
+## 📅 Roadmap de Implementação
 
-**Dados:**
-- 🐘 **PostgreSQL** - Banco de dados (10Gi PVC)
-- 🔴 **Redis** - Cache e sessões (5Gi PVC)
+### ⏳ Onda 0: Foundation (Próximo Passo)
 
-**Observabilidade:**
-- 📊 **Prometheus** - Coleta de métricas (10Gi PVC)
-- 📈 **Grafana** - Dashboards e visualização (5Gi PVC)
+- Instalação de Docker, K3s, Helm e CLIs.
+- Scripts prontos em `scripts/deployment/infrastructure/linux/`.
 
-### Infrastructure Services (2 serviços)
+### ⏳ Ondas 1-6: Plataforma Core (Futuro)
 
-- 🌐 **NGINX Ingress Controller** - Roteamento HTTP/HTTPS
-- 🔐 **Cert-Manager** - Gerenciamento automático de certificados SSL/TLS
+- **Onda 1:** Rede (Traefik Ingress)
+- **Onda 2 & 3:** Dados (Postgres, Redis) e Segurança (Vault, Keycloak)
+- **Onda 5 & 6:** API Gateway (Kong) e Observabilidade Básica
 
-### Tecnologias Base
+### ⏳ Ondas 7-9: AI Platform (Futuro)
 
-- **Orquestração:** Kubernetes (K3s v1.33.6)
-- **Acesso:** Dual-mode (NodePort para dev + Ingress HTTPS para produção)
-- **Monitoramento:** Prometheus + Grafana com baseline de 15min
-- **Segurança:** Coraza WAF, Cert-Manager, TLS automático
-- **Storage:** 45Gi persistente com política Retain (proteção contra deleção)
+- **Onda 7:** Portal Developer (Backstage, ArgoCD)
+- **Onda 8:** AI Database (Qdrant) & LLM Gateway (LiteLLM)
+- **Onda 9:** Automação (n8n, Flowise)
 
-## 🔌 Modos de Acesso
+### ⏳ Ondas 10-12: Enterprise Scale (Futuro)
 
-### 🔧 Desenvolvimento (NodePort)
-Acesso direto via `localhost` - 7 serviços expostos em portas NodePort
+- **Onda 10-12:** Service Mesh (Istio), Logs (Loki) e Segurança Avançada (WAF)
 
-### 🚀 Produção (Ingress HTTPS)
-Acesso via domínio com certificados SSL/TLS automáticos (Let's Encrypt)
-- Configurado e pronto para ativação
-- Aguardando apenas configuração DNS
+---
 
 ## 🔗 Links Importantes
 
@@ -97,6 +78,6 @@ Acesso via domínio com certificados SSL/TLS automáticos (Let's Encrypt)
 
 Desenvolvido com ❤️ e 🇧🇷 pela Equipe AppGear
 
-**Versão 0.1.0** • Última atualização: 10 de dezembro de 2025
+**Versão 0.1.0** • Atualizado Constantemente
 
 </div>
